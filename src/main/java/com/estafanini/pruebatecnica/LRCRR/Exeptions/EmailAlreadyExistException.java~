@@ -1,0 +1,8 @@
+package com.estafanini.pruebatecnica.LRCRR.Exeptions;
+
+public class EmailAlreadyExist extends Exception {
+
+    public EmailAlreadyExist(String message) {
+        super(message);
+    }
+}

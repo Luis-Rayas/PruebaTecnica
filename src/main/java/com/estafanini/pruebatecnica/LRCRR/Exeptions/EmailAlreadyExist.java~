@@ -1,0 +1,4 @@
+package com.estafanini.pruebatecnica.LRCRR.Exeptions;
+
+public class EmailAlreadyExist {
+}

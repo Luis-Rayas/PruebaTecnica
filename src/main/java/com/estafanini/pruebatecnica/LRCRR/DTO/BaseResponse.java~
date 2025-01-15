@@ -1,0 +1,25 @@
+package com.estafanini.pruebatecnica.LRCRR.DTO;
+
+import lombok.Data;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Data
+public class RespuestaBase<T> {
+    private boolean error;
+    private List<String> messages;
+    private T data;
+
+    public RespuestaBase() {
+        this.error = false;
+        this.messages = new ArrayList<>();
+        this.data = null;
+    }
+
+    public RespuestaBase(boolean error, List<String> messages, T data) {
+        this.error = error;
+        this.messages = messages;
+        this.data = data;
+    }
+}
