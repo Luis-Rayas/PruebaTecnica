@@ -61,7 +61,7 @@ public class UserController {
         BaseResponse<User> response = new BaseResponse<>();
 
         try {
-            User userToSave = User.builder().email(user.getEmail()).password(user.getPassword()).build();
+            User userToSave = User.builder().nombre(user.getNombre()).email(user.getEmail()).password(user.getPassword()).build();
             User userSaved = userService.save(userToSave);
 
             response.setData(userSaved);
